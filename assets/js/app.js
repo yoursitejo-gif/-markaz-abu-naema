@@ -1,7 +1,7 @@
 /**
  * ============================================================================
- * ABU NAEMEH CENTER FOR HYBRID CAR SERVICE - UNIFIED JAVASCRIPT BUNDLE
- * مركز أبو نعمة لصيانة السيارات الهجينة — عمّان، الأردن
+ * ABU NAEMEH CAR SERVICE CENTER - UNIFIED JAVASCRIPT BUNDLE
+ * مركز أبو نعمة لصيانة السيارات — عمّان، الأردن
  * Phone / WhatsApp: +962 7 9600 3058
  * Location: عمّان — ش. الملك حسين (مجمع المحطة)
  * ============================================================================
@@ -48,16 +48,16 @@
 /* === SECTION 3: BILINGUAL TRANSLATIONS === */
 
 /**
- * ABU NAEMEH CENTER FOR HYBRID CAR SERVICE
+ * ABU NAEMEH CAR SERVICE & ELECTRICAL CENTER
  * Official Bilingual Translations (Arabic / English)
- * مركز أبو نعمة لصيانة السيارات الهجينة — عمّان، الأردن
+ * مركز أبو نعمة لصيانة وكهرباء السيارات — عمّان، الأردن
  */
 
 const translations = {
   ar: {
     // Meta & Document
-    pageTitle: "مركز أبو نعمة لصيانة السيارات الهجينة | عمّان",
-    metaDescription: "مركز أبو نعمة لفحص وصيانة السيارات الهجينة والسيارات في عمّان. فحص كمبيوتر، صيانة هايبرد، كهرباء سيارات وتكييف.",
+    pageTitle: "مركز أبو نعمة لصيانة السيارات | عمّان",
+    metaDescription: "مركز أبو نعمة لصيانة السيارات والكهرباء في عمّان. خدمات فحص الكمبيوتر، كهرباء السيارات، غيار الزيت، وتصليح وغاز المكيفات.",
 
     // Top Status Bar
     locCity: "📍 عمّان، الأردن",
@@ -68,7 +68,7 @@ const translations = {
 
     // Brand & Header
     brandName: "مركز أبو نعمة",
-    brandSubtitle: "لصيانة السيارات الهجينة",
+    brandSubtitle: "لصيانة وكهرباء السيارات",
     brandEn: "ABUNAEMEH",
     navHome: "الرئيسية",
     navServices: "خدماتنا",
@@ -77,54 +77,60 @@ const translations = {
     navWork: "أعمالنا",
     navLocation: "موقعنا",
     navContact: "تواصل معنا",
-    navBookBtn: "احجز موعد",
+    navBookBtn: "تواصل معنا",
     langToggle: "English",
     headerWaAria: "تواصل عبر واتساب",
 
     // Hero Section
     heroBadge: "📍 عمّان، الأردن",
     heroBrandName: "مركز أبو نعمة",
-    heroBrandTagline: "لصيانة السيارات الهجينة",
-    heroMainTitle: "فحص وصيانة السيارات الهجينة",
-    heroSupporting: "نفحص السيارة ونحدد المشكلة قبل البدء بالإصلاح.",
-    heroCtaBook: "احجز موعد",
+    heroBrandTagline: "لصيانة وكهرباء السيارات",
+    heroMainTitle: "مركز أبو نعمة لصيانة وكهرباء السيارات",
+    heroSupporting: "خدمات فحص الكمبيوتر، كهرباء السيارات، غيار الزيت، وتكييف السيارات في عمّان.",
+    heroCtaBook: "تواصل معنا",
     heroCtaWhatsApp: "تواصل معنا عبر واتساب",
     heroPhotoTag: "المركز في عمّان",
     heroHighlight1: "فحص كمبيوتر",
-    heroHighlight2: "صيانة الهايبرد",
-    heroHighlight3: "كهرباء وتكييف",
-    heroBadgeCenterName: "مركز أبو نعمة لصيانة السيارات الهجينة",
+    heroHighlight2: "كهرباء سيارات",
+    heroHighlight3: "مكيفات وزيوت",
+    heroBadgeCenterName: "مركز أبو نعمة لصيانة السيارات",
     heroBadgeAddress: "عمّان — ش. الملك حسين (وسط البلد)",
     heroBadgeStatus: "المركز مفتوح لاستقبال السيارات",
-    storefrontAlt: "واجهة مركز أبو نعمة لصيانة السيارات الهجينة في عمّان",
+    heroScrollPrompt: "مرّر للأسفل لاستعراض خدمات المركز",
+    heroSwipePrompt: "اسحب لليمين أو لليسار",
+    storefrontAlt: "واجهة مركز أبو نعمة لصيانة السيارات في عمّان",
 
     // Services Section
     servicesTag: "خدمات المركز",
     servicesTitle: "خدماتنا",
-    servicesSubtitle: "خدمات فحص وصيانة متخصصة للسيارات الهجينة والسيارات المختلفة.",
+    servicesSubtitle: "خدمات فحص كمبيوتر، كهرباء سيارات، غيار زيت، وتكييف السيارات.",
     srv1Title: "فحص كمبيوتر",
-    srv1Desc: "تشخيص أعطال السيارة وقراءة الأنظمة.",
-    srv2Title: "صيانة الهايبرد",
-    srv2Desc: "فحص وصيانة أنظمة السيارات الهجينة.",
-    srv3Title: "كهرباء السيارات",
-    srv3Desc: "فحص المشاكل والأعطال الكهربائية.",
-    srv4Title: "تكييف السيارات",
-    srv4Desc: "فحص وصيانة نظام التكييف.",
-    srvBtnBook: "احجز موعد للفحص",
-    postSrvTitle: "سيارتك فيها مشكلة؟ احجز موعد للفحص",
-    postSrvDesc: "نفحص السيارة أولًا ونحدد المشكلة قبل البدء بالإصلاح.",
+    srv1Desc: "فحص السيارة وقراءة الأعطال باستخدام الكمبيوتر.",
+    srv2Title: "كهرباء سيارات",
+    srv2Desc: "فحص وإصلاح الأعطال والمشاكل الكهربائية في السيارة.",
+    srv3Title: "غيار زيت",
+    srv3Desc: "خدمة تغيير زيت السيارة.",
+    srv4Title: "غاز مكيفات",
+    srv4Desc: "خدمة غاز مكيفات السيارات.",
+    srv5Title: "تصليح مكيفات",
+    srv5Desc: "فحص وإصلاح مشاكل مكيف السيارة.",
+    srv6Title: "تصليح كهرباء جميع أنواع السيارات",
+    srv6Desc: "فحص وإصلاح أعطال كهرباء السيارات.",
+    srvBtnBook: "استفسر عن الخدمة",
+    postSrvTitle: "عندك استفسار أو مشكلة في سيارتك؟",
+    postSrvDesc: "نفحص السيارة ونحدد المشكلة قبل البدء بالإصلاح. تواصل معنا للاستفسار.",
 
-    // Hybrid Special Section
-    hybridSpecTag: "خدمة متخصصة",
-    hybridSpecTitle: "سيارتك هايبرد؟ خلينا نفحصها أولًا.",
-    hybridSpecText1: "السيارة الهجينة تحتاج إلى فحص وتشخيص دقيق لمعرفة سبب المشكلة قبل البدء بالإصلاح.",
-    hybridSpecText2: "نبدأ بالفحص، نوضح لك المشكلة، وبعدها يتم تحديد الإجراء المطلوب.",
-    hybridPoint1: "فحص خلايا بطارية الهايبرد والجهد الكهربائي",
-    hybridPoint2: "تشخيص الإنفيرتر ومنظومة التحويل والتبريد",
-    hybridPoint3: "قراءة دقيقة لأكواد الأعطال الخاصة بأنظمة الهجين",
-    hybridSpecBtn: "احجز فحص",
-    hybridImgAlt: "فحص وتشخيص منظومة الهايبرد والإنفيرتر في مركز أبو نعمة",
-    hybridBadgeText: "فحص وتشخيص دقيق لأنظمة الهايبرد والجهد العالي",
+    // Electrical Highlight Section
+    hybridSpecTag: "كهربائي سيارات",
+    hybridSpecTitle: "سيارتك فيها عطل كهربائي؟ خلينا نفحصها أولًا.",
+    hybridSpecText1: "الأعطال الكهربائية ومشاكل كمبيوتر السيارة تحتاج إلى فحص دقيق لمعرفة سبب العطل قبل البدء بالإصلاح.",
+    hybridSpecText2: "نبدأ بالفحص، نوضح لك المشكلة، وبعدها يتم تحديد الإصلاح المطلوب.",
+    hybridPoint1: "فحص كمبيوتر وقراءة دقيقة لأكواد الأعطال في السيارة",
+    hybridPoint2: "فحص وإصلاح الأعطال والدوائر الكهربائية للسيارة",
+    hybridPoint3: "فحص وتصليح مكيف السيارة وتعبئة غاز المكيف",
+    hybridSpecBtn: "استفسر عن فحص سيارتك",
+    hybridImgAlt: "فحص وتشخيص كهرباء السيارات في مركز أبو نعمة",
+    hybridBadgeText: "فحص كمبيوتر وكهرباء سيارات لجميع الأنواع",
 
     // How It Works
     howTag: "طريقة الشغل",
@@ -144,20 +150,20 @@ const translations = {
     aboutTag: "من نحن",
     aboutTitle: "عن مركز أبو نعمة",
     aboutLead: "صيانة وفحص السيارات في عمّان",
-    aboutText1: "مركز أبو نعمة متخصص في فحص وصيانة السيارات، مع اهتمام خاص بالسيارات الهجينة وأنظمتها.",
-    aboutText2: "نعتمد على الفحص والتشخيص لمعرفة المشكلة قبل البدء بالإصلاح.",
+    aboutText1: "مركز أبو نعمة لصيانة السيارات والكهرباء، ويقدم خدمات فحص الكمبيوتر، كهرباء السيارات، غيار الزيت، وخدمات تكييف السيارات.",
+    aboutText2: "نعتمد على الفحص والتشخيص لمعرفة المشكلة قبل البدء بالإصلاح، مع تقديم عمل واضح ومباشر لصاحب السيارة.",
     aboutPoint1: "فحص وتشخيص دقيق قبل أي إصلاح",
     aboutPoint2: "توضيح المشكلة والخيارات لصاحب السيارة",
-    aboutPoint3: "اهتمام خاص بمنظومات الهايبرد والبطاريات",
+    aboutPoint3: "تصليح كهرباء وفحص كمبيوتر لمختلف أنواع السيارات",
     aboutFloatTitle: "شغل واضح ومباشر",
     aboutFloatSub: "توضيح المشكلة قبل بدء العمل",
 
     // Location Section
     locTag: "الموقع",
     locTitle: "زورنا في المركز",
-    locSubtitle: "مركز أبو نعمة لصيانة السيارات الهجينة — عمّان، الأردن.",
+    locSubtitle: "مركز أبو نعمة لصيانة السيارات — عمّان، الأردن.",
     locInfoTitle: "الموقع والمركز",
-    locCenterName: "مركز أبو نعمة لصيانة السيارات الهجينة",
+    locCenterName: "مركز أبو نعمة لصيانة السيارات",
     locHoursLabel: "أوقات العمل:",
     locPhoneLabel: "الهاتف:",
     locPhoneVal: "+962 7 9600 3058",
@@ -168,7 +174,7 @@ const translations = {
 
     // Contact Section & Form
     contactTag: "تواصل معنا",
-    contactTitle: "تحتاج فحص لسيارتك؟",
+    contactTitle: "عندك استفسار أو مشكلة في سيارتك؟",
     contactSubtitle: "أرسل لنا معلومات سيارتك وسنتواصل معك.",
     labelName: "الاسم *",
     placeholderName: "الاسم الكامل",
@@ -176,12 +182,10 @@ const translations = {
     placeholderPhone: "079XXXXXXX",
     phoneHint: "077 / 078 / 079 (10 أرقام)",
     labelCarMake: "نوع السيارة *",
-    placeholderCarMake: "مثلاً: تويوتا بريوس / كيا نيرو / هيونداي أيونك",
-    labelCarYear: "موديل السيارة (السنة)",
-    placeholderCarYear: "مثلاً: 2018",
-    labelIssue: "ما المشكلة؟ *",
-    placeholderIssue: "اشرح المشكلة باختصار (مثلاً: لمبة المحرك، ضعف العزم، صوت غريب...)",
-    btnSubmitBooking: "أرسل طلب الفحص",
+    placeholderCarMake: "مثلاً: تويوتا / هيونداي / كيا / نيسان...",
+    labelIssue: "ما المشكلة أو الخدمة المطلوبة؟ *",
+    placeholderIssue: "اشرح المشكلة باختصار (مثلاً: عطل كهربائي، فحص كمبيوتر، غيار زيت، مكيف...)",
+    btnSubmitBooking: "أرسل استفسارك",
     btnSubmitting: "جارٍ الإرسال...",
     btnWhatsAppDirect: "تواصل معنا عبر واتساب",
     btnCallDirect: "اتصال هاتفي",
@@ -191,14 +195,14 @@ const translations = {
     valNameReq: "يرجى كتابة الاسم.",
     valPhoneReq: "يرجى كتابة رقم هاتف صحيح (07XXXXXXXX).",
     valCarMakeReq: "يرجى كتابة نوع السيارة.",
-    valIssueReq: "يرجى توضيح المشكلة.",
-    modalSuccessTitle: "تم استلام طلب الفحص بنجاح",
-    modalSuccessBody: "شكراً لتواصلك مع مركز أبو نعمة. سنقوم بمراجعة التفاصيل والتواصل معك لتأكيد الموعد.",
+    valIssueReq: "يرجى توضيح المشكلة أو الخدمة المطلوبة.",
+    modalSuccessTitle: "تم استلام استفسارك بنجاح",
+    modalSuccessBody: "شكراً لتواصلك مع مركز أبو نعمة. سنقوم بمراجعة التفاصيل والتواصل معك.",
     modalCloseBtn: "حسناً",
 
     // Footer
     footerQuickLinks: "روابط سريعة",
-    footerDesc: "مركز أبو نعمة لصيانة السيارات الهجينة - فحص وتشخيص وصيانة السيارات في عمّان.",
+    footerDesc: "مركز أبو نعمة لصيانة السيارات - فحص كمبيوتر، كهرباء سيارات، غيار زيت، وتكييف السيارات في عمّان.",
     footerAddress: "📍 عمّان - ش. الملك حسين (وسط البلد) - مجمع المحطة",
     footerWhatsApp: "واتساب: 0796003058",
     footerCall: "اتصال: 0796003058",
@@ -220,8 +224,8 @@ const translations = {
 
   en: {
     // Meta & Document
-    pageTitle: "Abunaemeh Center for Hybrid Car Service | Amman",
-    metaDescription: "Abunaemeh Center for hybrid car diagnostics and service in Amman. Computer diagnostics, hybrid service, auto electrical and A/C.",
+    pageTitle: "Abunaemeh Center for Car Service | Amman",
+    metaDescription: "Abunaemeh Center for car maintenance and auto electrical in Amman. Computer diagnostics, auto electrical, oil change, and A/C service.",
 
     // Top Status Bar
     locCity: "📍 Amman, Jordan",
@@ -232,7 +236,7 @@ const translations = {
 
     // Brand & Header
     brandName: "Abunaemeh Center",
-    brandSubtitle: "for Hybrid Car Service",
+    brandSubtitle: "for Auto Maintenance & Electrical",
     brandEn: "ABUNAEMEH",
     navHome: "Home",
     navServices: "Services",
@@ -241,54 +245,60 @@ const translations = {
     navWork: "Our Work",
     navLocation: "Location",
     navContact: "Contact Us",
-    navBookBtn: "Book an Appointment",
+    navBookBtn: "Contact Us",
     langToggle: "العربية",
     headerWaAria: "Contact via WhatsApp",
 
     // Hero Section
     heroBadge: "📍 Amman, Jordan",
     heroBrandName: "Abunaemeh Center",
-    heroBrandTagline: "for Hybrid Car Service",
-    heroMainTitle: "Hybrid Car Inspection & Service",
-    heroSupporting: "We inspect your vehicle and identify the problem before starting the repair.",
-    heroCtaBook: "Book an Appointment",
+    heroBrandTagline: "for Auto Maintenance & Electrical",
+    heroMainTitle: "Car Maintenance & Electrical Service",
+    heroSupporting: "Computer diagnostics, auto electrical repair for all car types, oil changes, and car A/C services in Amman.",
+    heroCtaBook: "Contact Us",
     heroCtaWhatsApp: "Contact Us on WhatsApp",
     heroPhotoTag: "Workshop in Amman",
     heroHighlight1: "Computer Diagnostics",
-    heroHighlight2: "Hybrid Service",
-    heroHighlight3: "Auto Electrical & A/C",
-    heroBadgeCenterName: "Abunaemeh Center for Hybrid Car Service",
+    heroHighlight2: "Auto Electrical",
+    heroHighlight3: "A/C & Oil Change",
+    heroBadgeCenterName: "Abunaemeh Center for Car Maintenance",
     heroBadgeAddress: "Amman — King Hussein St. (Downtown)",
     heroBadgeStatus: "Open for Vehicle Reception & Service",
-    storefrontAlt: "Abunaemeh Hybrid Car Service Center in Amman",
+    heroScrollPrompt: "Scroll down to explore center services",
+    heroSwipePrompt: "Swipe left or right",
+    storefrontAlt: "Abunaemeh Car Service Center in Amman",
 
     // Services Section
     servicesTag: "Our Services",
     servicesTitle: "Our Services",
-    servicesSubtitle: "Specialized diagnostic and service solutions for hybrid and standard vehicles.",
+    servicesSubtitle: "Computer diagnostics, auto electrical, oil change, and car A/C services.",
     srv1Title: "Computer Diagnostics",
-    srv1Desc: "Vehicle fault code diagnostics and computerized system analysis.",
-    srv2Title: "Hybrid Service",
-    srv2Desc: "Inspection and specialized maintenance for hybrid vehicle systems.",
-    srv3Title: "Auto Electrical",
-    srv3Desc: "Inspection, wiring analysis, and troubleshooting of automotive electrical systems.",
-    srv4Title: "Auto A/C",
-    srv4Desc: "Testing, leak detection, and maintenance for automotive air conditioning systems.",
-    srvBtnBook: "Book an Inspection",
-    postSrvTitle: "Experiencing an issue with your vehicle? Book an inspection",
-    postSrvDesc: "We inspect the car first and diagnose the root cause before starting repairs.",
+    srv1Desc: "Vehicle inspection and fault code reading using computer diagnostics.",
+    srv2Title: "Auto Electrical",
+    srv2Desc: "Troubleshooting and repairing automotive electrical faults and issues.",
+    srv3Title: "Oil Change",
+    srv3Desc: "Vehicle engine oil change service.",
+    srv4Title: "A/C Gas Refill",
+    srv4Desc: "Automotive air conditioning gas refill service.",
+    srv5Title: "A/C Repair",
+    srv5Desc: "Inspecting and repairing car air conditioning problems.",
+    srv6Title: "Electrical Repair for All Car Types",
+    srv6Desc: "Automotive electrical troubleshooting and repairs for all car makes.",
+    srvBtnBook: "Inquire About Service",
+    postSrvTitle: "Have an issue or question about your car?",
+    postSrvDesc: "We inspect the car and determine the problem before starting repairs. Contact us to inquire.",
 
-    // Hybrid Special Section
-    hybridSpecTag: "Specialized Service",
-    hybridSpecTitle: "Driving a Hybrid? Let us inspect it first.",
-    hybridSpecText1: "Hybrid vehicles require precision diagnostic testing to identify the root cause before beginning repairs.",
-    hybridSpecText2: "We begin with inspection, clarify the issue thoroughly, and determine the exact required action.",
-    hybridPoint1: "Hybrid battery cell analysis & high-voltage testing",
-    hybridPoint2: "Inverter converter unit & dedicated cooling system diagnostics",
-    hybridPoint3: "Accurate OEM trouble code reading for hybrid powertrains",
-    hybridSpecBtn: "Book an Inspection",
-    hybridImgAlt: "Hybrid system and inverter diagnostics at Abunaemeh Center",
-    hybridBadgeText: "Accurate diagnostics for hybrid & high-voltage systems",
+    // Electrical Highlight Section
+    hybridSpecTag: "Auto Electrician",
+    hybridSpecTitle: "Experiencing an electrical issue? Let us check it first.",
+    hybridSpecText1: "Automotive electrical faults require precise diagnostic scanning to identify the root cause before beginning repairs.",
+    hybridSpecText2: "We start with inspection, explain the issue clearly, and determine the necessary repair.",
+    hybridPoint1: "Computer diagnostics and accurate fault code reading",
+    hybridPoint2: "Troubleshooting and repairing automotive electrical wiring",
+    hybridPoint3: "Car air conditioning inspection, repair, and gas refilling",
+    hybridSpecBtn: "Inquire About Inspection",
+    hybridImgAlt: "Automotive electrical diagnostics at Abunaemeh Center",
+    hybridBadgeText: "Computer diagnostics and auto electrical for all car types",
 
     // How It Works
     howTag: "Our Process",
@@ -296,32 +306,32 @@ const translations = {
     howSubtitle: "Clear, transparent steps to identify the problem before starting any repair.",
     howStep1Num: "01",
     howStep1Title: "Inspect",
-    howStep1Desc: "We perform comprehensive vehicle inspection and system diagnostics first.",
+    howStep1Desc: "We begin by inspecting the vehicle and diagnosing the issue.",
     howStep2Num: "02",
-    howStep2Title: "Clarify",
-    howStep2Desc: "We explain the diagnosis, root cause, and necessary solutions clearly.",
+    howStep2Title: "Explain",
+    howStep2Desc: "We explain the problem and what the vehicle needs clearly.",
     howStep3Num: "03",
     howStep3Title: "Repair",
-    howStep3Desc: "Once agreed upon, skilled repair work is carried out with precision.",
+    howStep3Desc: "Once the problem is identified, the required repair is performed.",
 
     // About Section
     aboutTag: "About Us",
     aboutTitle: "About Us",
-    aboutLead: "Automotive Inspection & Service in Amman",
-    aboutText1: "Abunaemeh Center specializes in automotive diagnostics and maintenance, with dedicated expertise in hybrid vehicles and high-voltage powertrains.",
-    aboutText2: "We prioritize precision diagnostic analysis to pinpoint issues before initiating any mechanical or electrical repair.",
-    aboutPoint1: "Accurate diagnostics and testing prior to any repair",
-    aboutPoint2: "Clear explanation of the problem and practical options for the owner",
-    aboutPoint3: "Specialized knowledge in hybrid battery packs and power electronics",
-    aboutFloatTitle: "Transparent & Direct",
-    aboutFloatSub: "Clear diagnosis before commencing work",
+    aboutLead: "Car Maintenance & Electrical in Amman",
+    aboutText1: "Abunaemeh Center for Car Maintenance and Electrical provides computer diagnostics, auto electrical services, oil changes, and car A/C services.",
+    aboutText2: "We rely on inspection and diagnosis to find the problem before starting repairs, offering clear and direct service.",
+    aboutPoint1: "Accurate diagnostics and inspection prior to any repair",
+    aboutPoint2: "Clear explanation of the problem and options for the car owner",
+    aboutPoint3: "Auto electrical repair and computer diagnostics for all car types",
+    aboutFloatTitle: "Direct & Clear Work",
+    aboutFloatSub: "Clear diagnosis before starting work",
 
     // Location Section
     locTag: "Location",
     locTitle: "Visit Our Center",
-    locSubtitle: "Abunaemeh Center for Hybrid Car Service — Amman, Jordan.",
+    locSubtitle: "Abunaemeh Center for Car Maintenance — Amman, Jordan.",
     locInfoTitle: "Center Location",
-    locCenterName: "Abunaemeh Center for Hybrid Car Service",
+    locCenterName: "Abunaemeh Center for Car Maintenance",
     locHoursLabel: "Working Hours:",
     locPhoneLabel: "Phone:",
     locPhoneVal: "+962 7 9600 3058",
@@ -332,20 +342,18 @@ const translations = {
 
     // Contact Section & Form
     contactTag: "Contact Us",
-    contactTitle: "Need an Inspection for Your Vehicle?",
-    contactSubtitle: "Send us your vehicle details and our team will get in touch with you.",
+    contactTitle: "Have a Question or Problem with Your Car?",
+    contactSubtitle: "Send us your car details and we will get in touch with you.",
     labelName: "Full Name *",
     placeholderName: "Your full name",
     labelPhone: "Phone Number *",
     placeholderPhone: "079XXXXXXX",
     phoneHint: "077 / 078 / 079 (10 digits)",
-    labelCarMake: "Vehicle Make & Model *",
-    placeholderCarMake: "e.g., Toyota Prius / Kia Niro / Hyundai Ioniq",
-    labelCarYear: "Model Year",
-    placeholderCarYear: "e.g., 2018",
-    labelIssue: "Describe the Issue *",
-    placeholderIssue: "Briefly explain the issue (e.g., check engine light, lack of power, strange noise...)",
-    btnSubmitBooking: "Book an Appointment",
+    labelCarMake: "Car Make *",
+    placeholderCarMake: "e.g., Toyota / Hyundai / Kia / Nissan...",
+    labelIssue: "What is the problem or requested service? *",
+    placeholderIssue: "Briefly explain the issue (e.g., electrical fault, computer scan, oil change, A/C...)",
+    btnSubmitBooking: "Send Inquiry",
     btnSubmitting: "Submitting...",
     btnWhatsAppDirect: "Contact Us on WhatsApp",
     btnCallDirect: "Call Directly",
@@ -354,15 +362,15 @@ const translations = {
     // Validation & Modal
     valNameReq: "Please enter your name.",
     valPhoneReq: "Please enter a valid phone number (07XXXXXXXX).",
-    valCarMakeReq: "Please specify the vehicle make and model.",
-    valIssueReq: "Please describe the problem.",
-    modalSuccessTitle: "Inspection Request Received Successfully",
-    modalSuccessBody: "Thank you for contacting Abunaemeh Center. We will review the details and reach out to confirm your appointment.",
+    valCarMakeReq: "Please specify the vehicle make.",
+    valIssueReq: "Please describe the problem or requested service.",
+    modalSuccessTitle: "Inquiry Received Successfully",
+    modalSuccessBody: "Thank you for contacting Abunaemeh Center. We will review the details and reach out to you.",
     modalCloseBtn: "OK",
 
     // Footer
     footerQuickLinks: "Quick Links",
-    footerDesc: "Abunaemeh Center for Hybrid Car Service - Professional inspection, diagnostics, and repairs in Amman.",
+    footerDesc: "Abunaemeh Center for Car Maintenance - Computer diagnostics, auto electrical, oil changes, and car A/C services in Amman.",
     footerAddress: "📍 Amman - King Hussein St. (Downtown) - Mahatta Complex",
     footerWhatsApp: "WhatsApp: 0796003058",
     footerCall: "Call: 0796003058",
@@ -379,7 +387,7 @@ const translations = {
     ariaToggleLang: "Switch language to Arabic",
     ariaMobileMenu: "Open main navigation menu",
     ariaMainNavigation: "Main Navigation",
-    ariaCloseModal: "Close modal window"
+    ariaCloseModal: "Close dialog"
   }
 };
 
@@ -411,6 +419,7 @@ const translations = {
     let lastRenderedIndex = -1;
 
     // DOM Phase Elements
+    const heroStickyStage = document.getElementById('heroStickyStage');
     const heroTelemetryTop = document.getElementById('heroTelemetryTop');
     const heroMainTypography = document.getElementById('heroMainTypography');
     const heroHotspots = document.getElementById('heroHotspots');
@@ -418,14 +427,19 @@ const translations = {
     const heroTelemetryLeft = document.getElementById('heroTelemetryLeft');
     const heroVerdictCard = document.getElementById('heroVerdictCard');
     const heroScrollCue = document.getElementById('heroScrollCue');
+    const heroSwipeCue = document.getElementById('heroSwipeCue');
     const equalizerBars = document.querySelectorAll('.eq-bar');
 
-    // Canvas Resize Handling (Use clientWidth to guarantee zero horizontal scrollbar trigger)
+    // Canvas Resize Handling (Matches actual stage dimensions)
     function resizeCanvas() {
-      const w = document.documentElement.clientWidth || window.innerWidth;
-      const h = window.innerHeight;
-      canvas.width = w;
-      canvas.height = h;
+      const stage = heroStickyStage || canvas.parentElement || heroSection;
+      const rect = stage.getBoundingClientRect();
+      const w = Math.round(rect.width) || document.documentElement.clientWidth || window.innerWidth;
+      const h = Math.round(rect.height) || stage.clientHeight || window.innerHeight;
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width = w;
+        canvas.height = h;
+      }
       if (lastRenderedIndex >= 0) {
         renderFrame(lastRenderedIndex);
       }
@@ -433,28 +447,27 @@ const translations = {
     window.addEventListener('resize', resizeCanvas, { passive: true });
     resizeCanvas();
 
-    // Object-cover Canvas Frame Renderer
+    // Object-cover Canvas Frame Renderer (Preserves aspect ratio, zero distortion)
     function renderFrame(index) {
       if (!ctx || !images[index]) return;
       const img = images[index];
 
       if (img.complete && img.naturalWidth > 0) {
-        const curW = document.documentElement.clientWidth || window.innerWidth;
-        const curH = window.innerHeight;
-        if (canvas.width !== curW || canvas.height !== curH) {
-          canvas.width = curW;
-          canvas.height = curH;
-        }
+        const w = canvas.width;
+        const h = canvas.height;
+        if (w <= 0 || h <= 0) return;
 
-        const scale = Math.max(canvas.width / img.width, canvas.height / img.height);
-        const x = (canvas.width / 2) - (img.width / 2) * scale;
-        const y = (canvas.height / 2) - (img.height / 2) * scale;
+        const scale = Math.max(w / img.width, h / img.height);
+        const renderW = img.width * scale;
+        const renderH = img.height * scale;
+        const x = (w - renderW) / 2;
+        const y = (h - renderH) / 2;
 
-        ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+        ctx.drawImage(img, x, y, renderW, renderH);
       }
     }
 
-    // Preload all 100 WebP frames into browser memory
+    // Preload all 60 WebP frames into browser memory
     let loadedCount = 0;
     for (let i = 1; i <= TOTAL_FRAMES; i++) {
       const img = new Image();
@@ -479,7 +492,7 @@ const translations = {
       lastRenderedIndex = 0;
     }
 
-    // Spring Physics State (stiffness: 65, damping: 25, restDelta: 0.001)
+    // Spring Physics State (stiffness: 65, damping: 25)
     let targetProgress = 0;
     let smoothProgress = 0;
     let velocity = 0;
@@ -490,9 +503,16 @@ const translations = {
     function updatePhases(progress) {
       const p = Math.max(0, Math.min(1, progress));
 
-      // Scroll Cue (Fades out quickly)
+      // Desktop Scroll Cue (Fades out quickly on scroll)
       if (heroScrollCue) {
-        heroScrollCue.style.opacity = p < 0.04 ? (1 - p / 0.04).toFixed(3) : '0';
+        heroScrollCue.style.opacity = p < 0.05 ? (1 - p / 0.05).toFixed(3) : '0';
+      }
+
+      // Mobile Swipe Cue (Fades out as user swipes)
+      if (heroSwipeCue && !heroSwipeCue.classList.contains('faded')) {
+        if (p > 0.05) {
+          heroSwipeCue.classList.add('faded');
+        }
       }
 
       // Top Status Bar Telemetry (Visible in Phase 1, dimmed in Phase 2 & 3, fades in Phase 4)
@@ -611,7 +631,6 @@ const translations = {
 
     // Spring Physics Render Loop (stiffness: 65, damping: 25)
     function springLoop() {
-      // Spring simulation step: F = -k*(x - target) - c*v
       const displacement = smoothProgress - targetProgress;
       const springForce = - (stiffness * 0.0006) * displacement;
       const dampingForce = - (damping * 0.012) * velocity;
@@ -644,32 +663,212 @@ const translations = {
     }
     requestAnimationFrame(springLoop);
 
-    // Scroll progress measurement via GSAP ScrollTrigger or Native Scroll
-    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-      gsap.registerPlugin(ScrollTrigger);
+    // ------------------------------------------------------------------------
+    // DEVICE MODE HELPER
+    // ------------------------------------------------------------------------
+    function isMobileMode() {
+      return window.innerWidth <= 768;
+    }
 
-      ScrollTrigger.create({
-        trigger: heroSection,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: true,
-        onUpdate: (self) => {
-          targetProgress = self.progress;
+    // ------------------------------------------------------------------------
+    // DESKTOP SCROLL-CONTROLLED ANIMATION TIMELINE (WITH LOCK & RELEASE)
+    // ------------------------------------------------------------------------
+    // When the user reaches the Hero and scrolls DOWN:
+    // - Animation progresses forward.
+    // - While animation has NOT completed (progress < 100%), page scroll is locked to Hero.
+    // - Once animation reaches 100%, normal page scrolling is released to next sections.
+    // - Scrolling UP from below enters Hero at 100%, reverses back to 0%, then releases upward.
+    // ------------------------------------------------------------------------
+    function onDesktopWheel(e) {
+      if (isMobileMode()) return;
+
+      const scrollY = window.scrollY || window.pageYOffset || 0;
+      const isAtHero = scrollY <= 15;
+
+      if (e.deltaY > 0) {
+        // Scrolling DOWN
+        if (isAtHero && targetProgress < 1.0) {
+          // Lock page scroll and advance Hero animation
+          e.preventDefault();
+
+          const deltaMagnitude = Math.abs(e.deltaY);
+          const sensitivity = deltaMagnitude > 60 ? 0.14 : 0.09;
+          targetProgress = Math.min(1.0, targetProgress + sensitivity);
+
+          if (targetProgress >= 0.992) {
+            targetProgress = 1.0;
+          }
+        }
+        // If targetProgress >= 1.0: do not prevent default, allow normal page scroll down
+      } else if (e.deltaY < 0) {
+        // Scrolling UP
+        if (isAtHero) {
+          if (targetProgress > 0.0) {
+            // Lock page and reverse Hero animation back to starting frame
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'instant' });
+
+            const deltaMagnitude = Math.abs(e.deltaY);
+            const sensitivity = deltaMagnitude > 60 ? 0.14 : 0.09;
+            targetProgress = Math.max(0.0, targetProgress - sensitivity);
+
+            if (targetProgress <= 0.008) {
+              targetProgress = 0.0;
+            }
+          }
+          // If targetProgress === 0.0: release scroll upward
+        }
+      }
+    }
+    window.addEventListener('wheel', onDesktopWheel, { passive: false });
+
+    // Desktop Keyboard ArrowDown / ArrowUp / PageDown / PageUp
+    function onDesktopKey(e) {
+      if (isMobileMode()) return;
+      const scrollY = window.scrollY || window.pageYOffset || 0;
+      if (scrollY > 15) return;
+
+      const isDown = e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ' || e.key === 'Down';
+      const isUp = e.key === 'ArrowUp' || e.key === 'PageUp' || e.key === 'Up';
+
+      if (isDown && targetProgress < 1.0) {
+        e.preventDefault();
+        const step = (e.key === 'PageDown' || e.key === ' ') ? 0.28 : 0.12;
+        targetProgress = Math.min(1.0, targetProgress + step);
+        if (targetProgress >= 0.992) targetProgress = 1.0;
+      } else if (isUp && targetProgress > 0.0) {
+        e.preventDefault();
+        const step = (e.key === 'PageUp') ? 0.28 : 0.12;
+        targetProgress = Math.max(0.0, targetProgress - step);
+        if (targetProgress <= 0.008) targetProgress = 0.0;
+      }
+    }
+    window.addEventListener('keydown', onDesktopKey, { passive: false });
+
+    // Enforce Hero Scroll Lock on Desktop:
+    // Prevent accidental bypass before animation reaches 100%
+    function onDesktopScroll() {
+      if (isMobileMode()) return;
+      const scrollY = window.scrollY || window.pageYOffset || 0;
+
+      if (targetProgress < 0.98 && scrollY > 0) {
+        window.scrollTo(0, 0);
+      }
+    }
+    window.addEventListener('scroll', onDesktopScroll, { passive: true });
+
+    // Navigation links handler: when user clicks navigation link to lower sections,
+    // seamlessly complete animation so the user is never stuck
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', () => {
+        const href = link.getAttribute('href');
+        if (href && href !== '#' && href !== '#hero') {
+          targetProgress = 1.0;
+          smoothProgress = 1.0;
+          updatePhases(1.0);
+          renderFrame(TOTAL_FRAMES - 1);
         }
       });
-    } else {
-      function onNativeScroll() {
-        const rect = heroSection.getBoundingClientRect();
-        const scrollDistance = heroSection.offsetHeight - window.innerHeight;
-        if (scrollDistance <= 0) return;
-        const scrolled = -rect.top;
-        const progress = Math.max(0, Math.min(1, scrolled / scrollDistance));
-        targetProgress = progress;
+    });
+
+    // ------------------------------------------------------------------------
+    // MOBILE HORIZONTAL TOUCH SWIPE CONTROLLER
+    // ------------------------------------------------------------------------
+    // On mobile, horizontal swipe controls animation (Swipe left -> advance, Swipe right -> rewind).
+    // The entire webpage does not horizontally scroll.
+    // While interacting inside Hero, vertical jump is controlled until animation reaches end state.
+    // Once animation reaches intended end state, normal page scrolling is fully released.
+    // ------------------------------------------------------------------------
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartProgress = 0;
+    let isTouching = false;
+    let touchIntent = null; // 'horizontal' | 'vertical' | null
+    let lastTouchX = 0;
+    let lastTouchTime = 0;
+    let touchVelocityX = 0;
+
+    function onTouchStart(e) {
+      if (e.touches.length !== 1) return;
+      isTouching = true;
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      lastTouchX = touchStartX;
+      lastTouchTime = performance.now();
+      touchStartProgress = targetProgress;
+      touchIntent = null;
+      touchVelocityX = 0;
+    }
+
+    function onTouchMove(e) {
+      if (!isTouching || e.touches.length !== 1) return;
+      const curX = e.touches[0].clientX;
+      const curY = e.touches[0].clientY;
+      const dx = curX - touchStartX;
+      const dy = curY - touchStartY;
+
+      if (touchIntent === null) {
+        if (Math.abs(dx) > 6 || Math.abs(dy) > 6) {
+          touchIntent = Math.abs(dx) >= Math.abs(dy) ? 'horizontal' : 'vertical';
+        }
       }
 
-      window.addEventListener('scroll', onNativeScroll, { passive: true });
-      onNativeScroll();
+      if (touchIntent === 'horizontal') {
+        if (e.cancelable) e.preventDefault();
+
+        // Fade out subtle mobile instruction
+        if (heroSwipeCue && !heroSwipeCue.classList.contains('faded')) {
+          heroSwipeCue.classList.add('faded');
+        }
+
+        // Swipe Left (dx < 0): advances animation toward next state
+        // Swipe Right (dx > 0): moves animation backward
+        const stageW = heroStickyStage ? heroStickyStage.clientWidth : (window.innerWidth || 360);
+        const deltaProgress = - (dx / (stageW * 0.75));
+        targetProgress = Math.max(0.0, Math.min(1.0, touchStartProgress + deltaProgress));
+
+        const now = performance.now();
+        const dt = now - lastTouchTime;
+        if (dt > 10) {
+          touchVelocityX = (curX - lastTouchX) / dt;
+          lastTouchX = curX;
+          lastTouchTime = now;
+        }
+      } else if (touchIntent === 'vertical') {
+        // While user is actively within Hero before reaching end state, prevent accidental jump
+        if (targetProgress < 0.95) {
+          if (e.cancelable) e.preventDefault();
+        }
+        // Once targetProgress >= 0.95, vertical swipe moves to next page section naturally
+      }
     }
+
+    function onTouchEnd() {
+      if (!isTouching) return;
+      isTouching = false;
+
+      if (touchIntent === 'horizontal') {
+        if (Math.abs(touchVelocityX) > 0.2) {
+          const stageW = heroStickyStage ? heroStickyStage.clientWidth : (window.innerWidth || 360);
+          const inertiaDelta = - (touchVelocityX * 120) / (stageW * 0.75);
+          targetProgress = Math.max(0.0, Math.min(1.0, targetProgress + inertiaDelta));
+        }
+      }
+      touchIntent = null;
+    }
+
+    const swipeTarget = heroStickyStage || canvas;
+    if (swipeTarget) {
+      swipeTarget.addEventListener('touchstart', onTouchStart, { passive: true });
+      swipeTarget.addEventListener('touchmove', onTouchMove, { passive: false });
+      swipeTarget.addEventListener('touchend', onTouchEnd, { passive: true });
+      swipeTarget.addEventListener('touchcancel', onTouchEnd, { passive: true });
+    }
+
+    // Window resize handler: recalibrate canvas and viewport sizing
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+    }, { passive: true });
   }
 
   if (document.readyState === 'loading') {
@@ -684,8 +883,8 @@ const translations = {
 
 /**
  * ==========================================================================
- * ABU NAEMEH CENTER FOR HYBRID CAR SERVICE - CORE JAVASCRIPT
- * مركز أبو نعمة لصيانة السيارات الهجينة — عمّان، الأردن
+ * ABU NAEMEH CAR SERVICE CENTER - CORE JAVASCRIPT
+ * مركز أبو نعمة لصيانة السيارات — عمّان، الأردن
  * Phone / WhatsApp: +962 7 9600 3058
  * Location: عمّان — ش. الملك حسين (مجمع المحطة)
  * ==========================================================================
@@ -694,8 +893,8 @@ const translations = {
 const WORKSHOP_CONFIG = {
   nameAr: "مركز أبو نعمة",
   nameEn: "Abunaemeh Center",
-  taglineAr: "لصيانة السيارات الهجينة",
-  taglineEn: "for Hybrid Car Service",
+  taglineAr: "لصيانة وكهرباء السيارات",
+  taglineEn: "for Auto Maintenance & Electrical",
   
   cityAr: "عمّان، الأردن",
   cityEn: "Amman, Jordan",
@@ -728,7 +927,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const nameInput = document.getElementById('custName');
   const phoneInput = document.getElementById('custPhone');
   const carMakeInput = document.getElementById('custCarMake');
-  const carYearInput = document.getElementById('custCarYear');
   const issueInput = document.getElementById('custIssue');
 
   const nameFeedback = document.getElementById('nameFeedback');
@@ -823,8 +1021,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (svgMapName) {
       svgMapName.textContent = isAr 
-        ? 'مركز أبو نعمة لصيانة السيارات الهجينة' 
-        : 'Abunaemeh Center for Hybrid Car Service';
+        ? 'مركز أبو نعمة لصيانة السيارات' 
+        : 'Abunaemeh Center for Car Maintenance';
     }
 
     // 9. Update Active Validation Messages
@@ -938,61 +1136,48 @@ document.addEventListener('DOMContentLoaded', () => {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const isNameValid = validateField(nameInput, nameInput.value.trim().length >= 2, nameFeedback);
-      const isPhoneValid = validateField(phoneInput, isValidJordanianPhone(phoneInput.value), phoneFeedback);
-      const isCarValid = validateField(carMakeInput, carMakeInput.value.trim().length >= 2, carFeedback);
-      const isIssueValid = validateField(issueInput, issueInput.value.trim().length >= 3, issueFeedback);
+      const nameVal = nameInput ? nameInput.value.trim() : '';
+      const phoneVal = phoneInput ? phoneInput.value.trim() : '';
+      const carVal = carMakeInput ? carMakeInput.value.trim() : '';
+      const issueVal = issueInput ? issueInput.value.trim() : '';
 
-      if (isNameValid && isPhoneValid && isCarValid && isIssueValid) {
-        const submitBtn = bookingForm.querySelector('button[type="submit"]');
-        const submitBtnSpan = submitBtn.querySelector('span');
-        const originalText = submitBtnSpan ? submitBtnSpan.textContent : submitBtn.textContent;
-        
-        submitBtn.disabled = true;
-        if (submitBtnSpan) {
-          submitBtnSpan.textContent = currentLang === 'ar' ? 'جارٍ الإرسال...' : 'Submitting...';
-        }
+      const isNameValid = validateField(nameInput, nameVal.length >= 2, nameFeedback);
+      const isPhoneValid = validateField(phoneInput, isValidJordanianPhone(phoneVal), phoneFeedback);
+      const isCarValid = validateField(carMakeInput, carVal.length >= 2, carFeedback);
+      const isIssueValid = validateField(issueInput, issueVal.length >= 2, issueFeedback);
 
-        const nameVal = nameInput.value.trim();
-        const phoneVal = phoneInput.value.trim();
-        const carVal = carMakeInput.value.trim();
-        const yearVal = carYearInput ? carYearInput.value.trim() : '';
-        const issueVal = issueInput.value.trim();
-
-        // Simulate transmission and open modal
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          if (submitBtnSpan) {
-            submitBtnSpan.textContent = translations[currentLang]?.btnSubmitBooking || originalText;
-          }
-          bookingForm.reset();
-          openSuccessModal();
-
-          // Prepare localized pre-filled WhatsApp message
-          const waMsg = currentLang === 'ar'
-            ? `*طلب فحص - مركز أبو نعمة لصيانة السيارات الهجينة*\n` +
-              `👤 *الاسم:* ${nameVal}\n` +
-              `📱 *رقم الهاتف:* ${phoneVal}\n` +
-              `🚗 *السيارة:* ${carVal} ${yearVal ? `(${yearVal})` : ''}\n` +
-              `🔧 *المشكلة:* ${issueVal}`
-            : `*Inspection Request - Abunaemeh Center for Hybrid Car Service*\n` +
-              `👤 *Name:* ${nameVal}\n` +
-              `📱 *Phone:* ${phoneVal}\n` +
-              `🚗 *Vehicle:* ${carVal} ${yearVal ? `(${yearVal})` : ''}\n` +
-              `🔧 *Issue:* ${issueVal}`;
-
-          const waUrl = `https://wa.me/${WORKSHOP_CONFIG.whatsappNumber}?text=${encodeURIComponent(waMsg)}`;
-          
-          // Localize success modal content and link
-          const modalBody = successModal ? successModal.querySelector('.success-modal-p') : null;
-          if (modalBody) {
-            modalBody.innerHTML = (currentLang === 'ar'
-              ? `شكراً لتواصلك مع مركز أبو نعمة. تم تسجيل طلبك وسنتواصل معك.<br><br><a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="color:#2E8B35; font-weight:800; text-decoration:underline;">أو اضغط هنا لإرسال التفاصيل مباشرة عبر واتساب</a>`
-              : `Thank you for contacting Abunaemeh Center. We will review your details and contact you to confirm.<br><br><a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="color:#2E8B35; font-weight:800; text-decoration:underline;">Or click here to send details directly via WhatsApp</a>`
-            );
-          }
-        }, 400);
+      // Do NOT open WhatsApp if required information is missing or invalid
+      if (!isNameValid || !isPhoneValid || !isCarValid || !isIssueValid) {
+        if (!isNameValid && nameInput) nameInput.focus();
+        else if (!isPhoneValid && phoneInput) phoneInput.focus();
+        else if (!isCarValid && carMakeInput) carMakeInput.focus();
+        else if (!isIssueValid && issueInput) issueInput.focus();
+        return;
       }
+
+      // Construct WhatsApp message dynamically using ACTUAL values entered in the form
+      const waMsg = 
+        `مرحباً مركز أبو نعمة،\n` +
+        `لدي استفسار بخصوص سيارتي.\n` +
+        `الاسم: ${nameVal}\n` +
+        `رقم الهاتف: ${phoneVal}\n` +
+        `نوع السيارة: ${carVal}\n` +
+        `المشكلة أو الخدمة المطلوبة: ${issueVal}`;
+
+      // Properly URL-encode message for WhatsApp destination +962796003058
+      const waUrl = `https://wa.me/962796003058?text=${encodeURIComponent(waMsg)}`;
+
+      // Open WhatsApp directly
+      const win = window.open(waUrl, '_blank', 'noopener,noreferrer');
+      if (!win || win.closed || typeof win.closed === 'undefined') {
+        window.location.href = waUrl;
+      }
+
+      // Reset form state cleanly
+      bookingForm.reset();
+      [nameInput, phoneInput, carMakeInput, issueInput].forEach(el => {
+        if (el) el.classList.remove('is-invalid');
+      });
     });
   }
 
