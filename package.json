@@ -1,0 +1,9 @@
+{
+  "name": "carag-deemo",
+  "version": "1.0.0",
+  "description": "مركز أبو نعمة لصيانة السيارات الهجينة",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

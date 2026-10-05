@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <!-- Modern Hybrid Car Silhouette & Leaf Accent -->
+  <path d="M14 42L22 22H42L50 42H14Z" stroke="#2E8B35" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="23" cy="42" r="5" fill="#17651F" stroke="#2E8B35" stroke-width="3"/>
+  <circle cx="41" cy="42" r="5" fill="#17651F" stroke="#2E8B35" stroke-width="3"/>
+  <!-- Hybrid Energy Leaf Bolt -->
+  <path d="M30 20L36 28H28L34 36" stroke="#2E8B35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
