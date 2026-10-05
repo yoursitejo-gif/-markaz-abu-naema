@@ -420,10 +420,12 @@ const translations = {
     const heroScrollCue = document.getElementById('heroScrollCue');
     const equalizerBars = document.querySelectorAll('.eq-bar');
 
-    // Canvas Resize Handling
+    // Canvas Resize Handling (Use clientWidth to guarantee zero horizontal scrollbar trigger)
     function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const w = document.documentElement.clientWidth || window.innerWidth;
+      const h = window.innerHeight;
+      canvas.width = w;
+      canvas.height = h;
       if (lastRenderedIndex >= 0) {
         renderFrame(lastRenderedIndex);
       }
@@ -437,9 +439,11 @@ const translations = {
       const img = images[index];
 
       if (img.complete && img.naturalWidth > 0) {
-        if (canvas.width !== window.innerWidth || canvas.height !== window.innerHeight) {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
+        const curW = document.documentElement.clientWidth || window.innerWidth;
+        const curH = window.innerHeight;
+        if (canvas.width !== curW || canvas.height !== curH) {
+          canvas.width = curW;
+          canvas.height = curH;
         }
 
         const scale = Math.max(canvas.width / img.width, canvas.height / img.height);
@@ -569,8 +573,10 @@ const translations = {
             cardOpacity = Math.max(0, 1 - outProgress);
             slideX = outProgress * -30;
           }
+          const isMobile = window.innerWidth <= 768;
+          const actualSlideX = isMobile ? 0 : slideX;
           heroTelemetryLeft.style.opacity = cardOpacity.toFixed(3);
-          heroTelemetryLeft.style.transform = `translateY(-50%) translateX(${slideX.toFixed(1)}px)`;
+          heroTelemetryLeft.style.transform = `translateY(-50%) translateX(${actualSlideX.toFixed(1)}px)`;
           heroTelemetryLeft.style.pointerEvents = cardOpacity > 0.2 ? 'auto' : 'none';
 
           // Animate Equalizer Bars in Phase 3

@@ -61,6 +61,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+
   if (decodedPath === '/' || decodedPath === '') {
     decodedPath = '/index.html';
   } else if (decodedPath.startsWith('/frames/')) {
