@@ -3733,3 +3733,190 @@ html[dir="rtl"] .nav-menu.open {
   align-items: flex-start;
 }
 
+
+/* ==========================================================================
+   HERO — MOBILE LAYOUT FIX (no overlap between CTA buttons and battery visual)
+
+   Root cause: inside the fixed-height (340-390px) hero stage, the headline +
+   subtext + «تواصل معنا» / «مراسلة واتساب» buttons were `position:absolute`
+   on top of the battery canvas. At <=576px the button group becomes a column
+   while `.hero-action-group .btn { flex: 1 1 130px }` still applied, so each
+   button got a 130px *height* (flex-basis on the column axis). The text block
+   grew to ~425px, overflowed the 384px hero and was drawn over the battery
+   frames and the telemetry pills.
+
+   Fix: on mobile the stage becomes a normal vertical flow:
+     [telemetry pills] -> [visual frame: canvas + hotspots, exact 16:9] -> [text + CTAs]
+   The frame uses the same 16:9 ratio as the WebP frames (1280x720), so the
+   whole battery is shown without cropping. Desktop is untouched because
+   `.hero-visual-frame` is `display: contents` there.
+   ========================================================================== */
+.hero-visual-frame {
+  display: contents;
+}
+
+@media (max-width: 768px) {
+  .hero-section.hero-scrollytelling-section {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .hero-scrolly-track {
+    height: auto;
+  }
+
+  /* Stage = 3 rows: pills / image / content. The text block and the two phase
+     cards (telemetry + verdict) share row 3, so phase changes cross-fade in the
+     same spot below the image without any layout jump. */
+  .hero-sticky-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-content: start;
+    justify-content: stretch;
+    align-items: start;
+    height: auto;
+    /* room for the (absolute) swipe hint so it never touches the buttons */
+    padding-bottom: 40px;
+  }
+
+  /* Pills: out of the image, in normal flow above it */
+  .hero-telemetry-topbar {
+    grid-row: 1;
+    grid-column: 1;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 8px 8px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  /* Image area: exact frame ratio => battery fully visible, nothing cropped */
+  .hero-visual-frame {
+    grid-row: 2;
+    grid-column: 1;
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #09090b;
+  }
+
+  /* Content row (shared cell): text + CTAs, phase-3 cards, phase-4 verdict.
+     All in normal flow below the image — never over it. Their opacity /
+     pointer-events are still driven by the scroll-phase script as before. */
+  .hero-main-typography,
+  .hero-telemetry-left,
+  .hero-verdict-overlay {
+    grid-row: 3;
+    grid-column: 1;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 16px 16px 8px;
+    box-sizing: border-box;
+  }
+
+  /* The dark gradient only existed to make text readable over the image;
+     text no longer sits on the image, so keep just a soft edge fade. */
+  .hero-vignette-overlay {
+    background: radial-gradient(ellipse 100% 90% at 50% 50%, rgba(9, 9, 11, 0) 55%, rgba(9, 9, 11, 0.7) 100%);
+  }
+
+  .hero-main-typography {
+    text-align: center;
+  }
+
+  .hero-action-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* flex-basis only on the row axis; buttons keep a comfortable 44px+ tap height */
+  .hero-action-group .btn {
+    flex: 1 1 140px;
+    width: auto;
+    min-height: 46px;
+    padding: 10px 14px;
+    font-size: 0.92rem;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-action-group .btn {
+    flex: 1 1 100%;
+  }
+}
+
+/* Hero (mobile) — compact hotspot annotations + swipe hint placement */
+@media (max-width: 768px) {
+  .hero-sticky-stage {
+    padding-bottom: 12px;
+  }
+
+  /* Swipe hint: floats at the very bottom edge of the image (empty floor area),
+     never over the buttons that now live below the image */
+  .hero-swipe-cue {
+    grid-row: 2;
+    grid-column: 1;
+    align-self: end;
+    justify-self: center;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin-bottom: 6px;
+    z-index: 20;
+  }
+
+  .hero-swipe-cue.faded {
+    transform: translateY(8px) !important;
+  }
+
+  /* The image area is now a true 16:9 frame (smaller than the old 340-390px box),
+     so the hotspot labels are made compact to keep the battery readable. */
+  .hotspot-meta,
+  .hotspot-line {
+    display: none;
+  }
+
+  .hotspot-card {
+    max-width: min(138px, 42vw);
+    padding: 3px 6px;
+  }
+
+  .hotspot-tag {
+    font-size: 0.55rem;
+    padding: 1px 4px;
+    margin-bottom: 2px;
+  }
+
+  .hotspot-title {
+    font-size: 0.64rem;
+    line-height: 1.2;
+  }
+
+  .pin-cables { top: 5%; right: 3%; left: auto; }
+  .pin-bms { top: 36%; left: 3%; right: auto; }
+  .pin-thermal { bottom: 7%; right: 3%; left: auto; }
+}

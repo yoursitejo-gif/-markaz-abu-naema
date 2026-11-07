@@ -206,18 +206,6 @@
         <!-- Pinned Sticky 100vh Viewport Stage -->
         <div class="hero-sticky-stage" id="heroStickyStage">
 
-          <!-- 1. High-Performance Smooth Scroll Canvas (100 Preloaded WebP Frames) -->
-          <canvas id="heroScrollCanvas" class="hero-canvas-element" aria-hidden="true"></canvas>
-
-          <!-- 2. Permanent Background Dark Gradient Overlay (Ensures 100% Arabic Text Contrast) -->
-          <div class="hero-vignette-overlay" aria-hidden="true"></div>
-
-          <!-- 3. Animated Horizontal Emerald Laser Scan Line (Phase 3 active 55%-85%) -->
-          <div class="hero-laser-scan" id="heroLaserScan" aria-hidden="true">
-            <div class="laser-beam"></div>
-            <div class="laser-glow"></div>
-          </div>
-
           <!-- 4. Top Telemetry Status Bar (Pills - Phase 1 Active) -->
           <div class="hero-telemetry-topbar" id="heroTelemetryTop">
             <div class="telemetry-pill pill-soh">
@@ -236,6 +224,21 @@
               <span class="pill-val mono">غاز وصيانة</span>
               <span class="pill-sub">// فحص تبريد المكيف</span>
             </div>
+          </div>
+
+          <!-- Visual Frame: groups the battery canvas + image overlays (vignette, laser, hotspots); on mobile the text/CTA block and the phase cards sit in normal flow below it (display: contents on desktop = no layout change) -->
+          <div class="hero-visual-frame" id="heroVisualFrame">
+
+          <!-- 1. High-Performance Smooth Scroll Canvas (100 Preloaded WebP Frames) -->
+          <canvas id="heroScrollCanvas" class="hero-canvas-element" aria-hidden="true"></canvas>
+
+          <!-- 2. Permanent Background Dark Gradient Overlay (Ensures 100% Arabic Text Contrast) -->
+          <div class="hero-vignette-overlay" aria-hidden="true"></div>
+
+          <!-- 3. Animated Horizontal Emerald Laser Scan Line (Phase 3 active 55%-85%) -->
+          <div class="hero-laser-scan" id="heroLaserScan" aria-hidden="true">
+            <div class="laser-beam"></div>
+            <div class="laser-glow"></div>
           </div>
 
           <!-- 5. Interactive Glowing Hotspot Pins (Phase 2: 22% -> 55%) -->
@@ -273,6 +276,8 @@
               </div>
             </div>
           </div>
+
+          </div><!-- /.hero-visual-frame -->
 
           <!-- 6. Left Telemetry Glass Cards (Phase 3: 55% -> 85%) -->
           <div class="hero-telemetry-left" id="heroTelemetryLeft" aria-hidden="true">

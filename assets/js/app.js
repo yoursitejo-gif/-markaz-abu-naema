@@ -432,7 +432,9 @@ const translations = {
 
     // Canvas Resize Handling (Matches actual stage dimensions)
     function resizeCanvas() {
-      const stage = heroStickyStage || canvas.parentElement || heroSection;
+      // Measure the canvas box itself: on desktop it fills the stage, on mobile it fills the
+      // dedicated visual frame (the text/CTA block lives outside of it).
+      const stage = canvas;
       const rect = stage.getBoundingClientRect();
       const w = Math.round(rect.width) || document.documentElement.clientWidth || window.innerWidth;
       const h = Math.round(rect.height) || stage.clientHeight || window.innerHeight;
@@ -482,6 +484,8 @@ const translations = {
         }
         if (loadedCount === TOTAL_FRAMES) {
           isImagesLoaded = true;
+          // Safety redraw once everything is decoded so the very first frame is never left blank
+          resizeCanvas();
         }
       };
       images.push(img);
@@ -531,7 +535,14 @@ const translations = {
       }
 
       // Phase 1: Right Typography (0% -> 22%)
-      if (heroMainTypography) {
+      if (heroMainTypography && window.innerWidth <= 768) {
+        // Mobile: the text + CTA block sits in normal flow below the image, in the same
+        // cell as the phase-3 / phase-4 cards. It never covers the image, so it stays
+        // visible (buttons stay reachable) until the phase-3 cards cross-fade over it.
+        const mobileOpacity = p < 0.53 ? 1 : Math.max(0, 1 - (p - 0.53) / 0.05);
+        heroMainTypography.style.opacity = mobileOpacity.toFixed(3);
+        heroMainTypography.style.pointerEvents = mobileOpacity < 0.1 ? 'none' : 'auto';
+      } else if (heroMainTypography) {
         if (p <= 0.18) {
           heroMainTypography.style.opacity = '1';
           heroMainTypography.style.transform = 'translateY(-50%)';
@@ -857,7 +868,9 @@ const translations = {
       touchIntent = null;
     }
 
-    const swipeTarget = heroStickyStage || canvas;
+    // Swipes are captured only on the visual frame (image area), so the text + CTA block
+    // below it never blocks normal vertical page scrolling.
+    const swipeTarget = document.getElementById('heroVisualFrame') || heroStickyStage || canvas;
     if (swipeTarget) {
       swipeTarget.addEventListener('touchstart', onTouchStart, { passive: true });
       swipeTarget.addEventListener('touchmove', onTouchMove, { passive: false });
@@ -866,6 +879,10 @@ const translations = {
     }
 
     // Window resize handler: recalibrate canvas and viewport sizing
+    // (also re-measure once the page + web fonts finished loading: layout can shift after init)
+    window.addEventListener('load', () => {
+      resizeCanvas();
+    }, { passive: true });
     window.addEventListener('resize', () => {
       resizeCanvas();
     }, { passive: true });
